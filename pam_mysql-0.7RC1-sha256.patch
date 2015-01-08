@@ -23,7 +23,7 @@
 +                md[j + 0] = "0123456789abcdef"[(int)(buf[i] >> 4)];
 +                md[j + 1] = "0123456789abcdef"[(int)(buf[i] & 0x0f)];
 +        }
-+        md[j] = '\0'; syslog(LOG_AUTHPRIV | LOG_ERR, PAM_MYSQL_LOG_PREFIX "SHA256 digest: %s", md);
++        md[j] = '\0';
 +
 +        return md;
 +}
